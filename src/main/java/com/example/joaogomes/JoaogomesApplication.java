@@ -20,6 +20,10 @@ public class JoaogomesApplication {
         SpringApplication.run(JoaogomesApplication.class, args);
     }
 
-
+    @GetMapping
+    public String welcome() {
+        return "Welcome to Spring REST API," +  "\n" +
+                "see full Doc in https://github.com/Joaosilgo/spring-boot-rest-api";
+    }
 
 }
